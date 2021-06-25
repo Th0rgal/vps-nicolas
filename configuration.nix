@@ -9,5 +9,4 @@
   # Packages
   environment.systemPackages = with pkgs; [ wget git ];
 
-  programs.fish.enable = true;
 }
