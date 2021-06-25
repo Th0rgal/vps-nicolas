@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   require =
     [ ./hardware-configuration.nix ./desktop.nix ./networking.nix ./users.nix ];
 
