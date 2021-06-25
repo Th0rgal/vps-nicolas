@@ -1,10 +1,5 @@
 { pkgs, ... }: {
-  require = [
-    ./hardware-configuration.nix
-    ./networking.nix
-    ./users.nix
-    ./web.nix
-  ];
+  require = [ ./hardware-configuration.nix ./networking.nix ./users.nix ];
 
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
