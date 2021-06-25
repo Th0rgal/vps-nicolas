@@ -1,9 +1,18 @@
 { lib, ... }: {
-  services.openssh = {
-    enable = true;
-    ports = [ 4387 ];
-    permitRootLogin = "yes";
-    passwordAuthentication = true;
+  services = {
+
+    openssh = {
+      enable = true;
+      ports = [ 4387 ];
+      permitRootLogin = "yes";
+      passwordAuthentication = true;
+    };
+
+    xrdp = {
+      enable = true;
+      defaultWindowManager = "startplasma-x11";
+    };
+
   };
 
   networking = {
