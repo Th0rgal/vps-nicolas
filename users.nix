@@ -1,12 +1,12 @@
 { pkgs, ... }: {
 
-  nix.trustedUsers = [ "root" "thomas" ];
+  nix.trustedUsers = [ "root" "nicolas" ];
 
   users.users = {
 
-    thomas = {
+    nicolas = {
       isNormalUser = true;
-      home = "/home/thomas";
+      home = "/home/nicolas";
       extraGroups = [ "wheel" ];
       shell = pkgs.fish;
       openssh.authorizedKeys.keys = [
